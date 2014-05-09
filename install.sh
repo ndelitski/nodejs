@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+node_version=${1:-'0.10.26'}
+
+cd /usr/local/src
+wget http://nodejs.org/dist/v${node_version}/node-v${node_version}.tar.gz
+tar xzf node-v${node_version}.tar.gz
+cd ./node-v${node_version}
+./configure --prefix=/usr/local
+make
+make install
