@@ -4,5 +4,5 @@ MAINTAINER Nick Delitski
 ADD install.sh /usr/local/bin/install-node.sh
 RUN apt-get update -y
 RUN apt-get install -y build-essential wget python-software-properties python-dev
-RUN  cat /usr/local/bin/install-node.sh
-RUN /usr/local/bin/install-node.sh
+RUN sudo /usr/local/bin/install-node.sh
+RUN npm config set registry http://registry.npmjs.org/
