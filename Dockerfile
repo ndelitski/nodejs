@@ -4,8 +4,8 @@ MAINTAINER Nick Delitski
 ENV    	DEBIAN_FRONTEND noninteractive
 
 # NodeJS installation
-RUN 	apt-get update
-RUN 	apt-get install build-essential wget python-software-properties python-dev
+RUN 	apt-get update -y
+RUN 	apt-get install -y build-essential wget python-software-properties python-dev
 ADD 	scripts /opt/nodejs
 RUN 	chmod +x /opt/nodejs/install
 RUN		/opt/nodejs/install
