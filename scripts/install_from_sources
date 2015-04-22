@@ -2,7 +2,7 @@
 
 set -e
 
-node_version=${1:-'0.10.26'}
+node_version=${1:-'0.12.2'}
 
 cd /usr/local/src
 wget http://nodejs.org/dist/v${node_version}/node-v${node_version}.tar.gz

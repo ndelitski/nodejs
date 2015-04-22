@@ -5,7 +5,7 @@ ENV    	DEBIAN_FRONTEND noninteractive
 
 # NodeJS installation
 RUN   apt-get update
-RUN 	apt-get install -y build-essential
+RUN 	apt-get install -y build-essential wget
 ADD 	scripts/install_from_deb /opt/nodejs/install
 RUN 	chmod +x /opt/nodejs/install
 RUN 	/opt/nodejs/install
