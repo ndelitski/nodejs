@@ -1,7 +1,7 @@
 require 'shelljs/global'
 shortName = 'nodejs'
 name = 'quay.io/ndelitski/nodejs'
-version = 'latest'
+version = '4.1'
 
 task 'build', 'build docker image', ->
   exec "docker build -t #{name} --rm ./"
